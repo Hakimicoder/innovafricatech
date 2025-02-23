@@ -1,0 +1,270 @@
+/* Author : Jumael Kamga */
+/* Type :Landing Page */
+/* Date : Friday 20 fevrier 2025, 09:03:19 */
+/* Tools : Html, Css, Tailwind Css, Javsacript
+    (Css Animation, ScrollyJS, Email.JS) */
+/* Version : 1.0 */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    line-height: 1.5;
+
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+html, body {
+    font-size: 90%;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary:#eb0492f5;
+    --primary-low:#d5168cf3;
+    --black:#1a191a;
+    --secondary-black:#343434;
+    --white:#fff;
+    --secondary-white:#ffffffb9;
+
+    --linear-bg: linear-gradient(to left top, #eb0493c3, #1a191adf);
+    --linear-bg2: linear-gradient(to right bottom, #eb0493c3, #1a191adf);
+    --linear-bg3: linear-gradient(to right bottom, #eb04937e, #1a191a9a);
+    --linear-bg4: linear-gradient(to right bottom, #eb0493f0, #1a191af0);
+}
+
+::selection {
+    background: var(--primary);
+    color: var(--white);
+}
+
+::-webkit-scrollbar {
+    width: .2rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 5rem;
+}
+
+header {padding: 0rem 5rem;}
+section {padding: 6rem 5rem;}
+footer {padding: 4rem 5rem;}
+
+#down {
+    margin: 1.5rem 0rem 3.5rem;
+}
+
+#sec-title {
+    font-size: 1.8rem;
+}
+
+.big {
+    font-size: 4rem;
+}
+
+.active {
+    color: var(--primary);
+}
+
+header .active {
+    font-weight: 600;
+}
+
+h1,h2,h3 {
+    font-weight: 600;
+    /* animation: slide-in-one-tap alternate 2s; */
+    line-height: 1;
+}
+
+a, p, .to-break{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+.link-active {
+    color: var(--white);
+    text-transform: capitalize;
+    display: inline-block;
+    text-align: center !important;
+}
+
+.link-active a {
+    color: inherit;
+}
+
+.link-active span {
+    margin: 0rem .7rem;
+}
+
+.link-active a:nth-of-type(1):hover {
+    transition: all .3s ease-in-out;
+    color: var(--primary);
+}
+.link-active a:nth-of-type(2) {
+    color: var(--primary);
+}
+
+p {
+    color: var(--secondary-black);
+    margin-bottom: 1rem;
+}
+
+i {
+    color: var(--secondary-black);
+    font-size: 1rem;
+    margin-right: .5rem;
+}
+
+.btn {
+    margin-top: 2.5rem;
+}
+
+.banner .btn {
+    margin-top: 4rem;
+}
+
+.link {
+    color: var(--primary);
+}
+
+.link:hover {
+    text-decoration: underline;
+    transition: all .3s ease-in-out;
+}
+
+.btn a,  .linkOut {
+    background: var(--primary);
+    color: var(--white);
+    padding: .8rem 1rem;
+    border-radius: .2rem;
+    font-weight: 500;
+}
+
+.btn a:hover, .linkOut:hover {
+    background: var(--linear-bg);
+    color: var(--white) !important;
+    transition: all .3s ease-in-out;
+}
+
+.title {
+    margin-bottom: 1rem;
+    color: var(--white);
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.banner p {
+    color: var(--secondary-white);
+}
+
+.to-break {
+    display: block;
+}
+
+.iat-cart,
+.footer-cart {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: auto;
+}
+
+.iat-cart .cart {
+    box-shadow: 1px 1px 5px 1px #ddd4d4;
+    overflow: hidden;
+    padding: 3rem 1rem;
+    border-radius: .5rem;
+    color: var(--primary);
+    width: 100%;
+    margin: auto;
+}
+
+.cart:hover {
+    background: var(--linear-bg);
+    transform: translateY(-0.5rem);
+    transition: all .3s ease-in-out;
+    color: var(--white);
+}
+
+.iat-cart .cart .number {
+    color: var(--secondary-black);
+    font-weight: 900;
+    font-size: 5rem;
+    line-height: 1;
+}
+
+.iat-cart .cart .text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    margin-top: 3.5rem;
+}
+
+.iat-cart .cart .text h3 {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.cart .text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    margin-top: 3.5rem;
+}
+
+.cart p {
+    color: var(--secondary-black);
+}
+
+.cart .text a {
+    transition: all .3s ease-in-out;
+    display: inline-block;
+    width: 50%;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 5rem;
+    text-align: center;
+    color: inherit;
+}
+
+.cart:hover .text a {
+    padding: 1rem;
+    border-radius: 5rem;
+    background: var(--linear-bg);
+    transition: all .3s ease-in-out;
+    color: var(--white);
+}
+
+.cart:hover h3 {
+    color: var(--white) !important;
+}
+
+.cart:hover p {
+    color: var(--secondary-white);
+}
+
+.cart:hover .number {
+    color: var(--primary);
+}
+
+@keyframes slide-in-one-tap {
+    from {
+        transform: translateY(75px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
