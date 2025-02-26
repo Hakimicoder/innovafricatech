@@ -23,18 +23,19 @@
     /* font-family: 'Poppins', sans-serif; */
 }
 
-html, body {
+html,
+body {
     font-size: 90%;
     scroll-behavior: smooth;
 }
 
 :root {
-    --primary:#eb0492f5;
-    --primary-low:#d5168cf3;
-    --black:#1a191a;
-    --secondary-black:#343434;
-    --white:#fff;
-    --secondary-white:#ffffffb9;
+    --primary: #eb0492f5;
+    --primary-low: #d5168cf3;
+    --black: #1a191a;
+    --secondary-black: #343434;
+    --white: #fff;
+    --secondary-white: #ffffffb9;
 
     --linear-bg: linear-gradient(to left top, #eb0493c3, #1a191adf);
     --linear-bg2: linear-gradient(to right bottom, #eb0493c3, #1a191adf);
@@ -56,9 +57,17 @@ html, body {
     border-radius: 5rem;
 }
 
-header {padding: 0rem 5rem;}
-section {padding: 6rem 5rem;}
-footer {padding: 4rem 5rem;}
+header {
+    padding: 0rem 5rem;
+}
+
+section {
+    padding: 6rem 5rem;
+}
+
+footer {
+    padding: 4rem 5rem;
+}
 
 #down {
     margin: 1.5rem 0rem 3.5rem;
@@ -80,13 +89,17 @@ header .active {
     font-weight: 600;
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
     font-weight: 600;
     /* animation: slide-in-one-tap alternate 2s; */
     line-height: 1;
 }
 
-a, p, .to-break{
+a,
+p,
+.to-break {
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
 }
@@ -110,6 +123,7 @@ a, p, .to-break{
     transition: all .3s ease-in-out;
     color: var(--primary);
 }
+
 .link-active a:nth-of-type(2) {
     color: var(--primary);
 }
@@ -142,7 +156,8 @@ i {
     transition: all .3s ease-in-out;
 }
 
-.btn a,  .linkOut {
+.btn a,
+.linkOut {
     background: var(--primary);
     color: var(--white);
     padding: .8rem 1rem;
@@ -150,7 +165,8 @@ i {
     font-weight: 500;
 }
 
-.btn a:hover, .linkOut:hover {
+.btn a:hover,
+.linkOut:hover {
     background: var(--linear-bg);
     color: var(--white) !important;
     transition: all .3s ease-in-out;
@@ -224,24 +240,26 @@ i {
     margin-top: 3.5rem;
 }
 
-.cart p {
+.cart p,
+.pricing-bloc li {
     color: var(--secondary-black);
 }
 
-.cart .text a {
+.cart .text a,
+.pricing-bloc a {
     transition: all .3s ease-in-out;
     display: inline-block;
     width: 50%;
     margin: auto;
-    padding: 1rem;
-    border-radius: 5rem;
+    padding: .7rem 1rem;
+    background: #ede7e7;
+    border-radius: .3rem;
     text-align: center;
     color: inherit;
 }
 
-.cart:hover .text a {
-    padding: 1rem;
-    border-radius: 5rem;
+.cart:hover .text a,
+.pricing-bloc:hover a {
     background: var(--linear-bg);
     transition: all .3s ease-in-out;
     color: var(--white);
@@ -251,12 +269,18 @@ i {
     color: var(--white) !important;
 }
 
-.cart:hover p {
+.cart:hover p,
+.pricing-bloc:hover li {
     color: var(--secondary-white);
 }
 
-.cart:hover .number {
+.cart:hover .number,
+.pricing-bloc:hover h1 {
     color: var(--primary);
+}
+
+div {
+    animation: slide-in-one-tap .8s alternate;
 }
 
 @keyframes slide-in-one-tap {
