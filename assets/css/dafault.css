@@ -285,7 +285,7 @@ div {
 
 @keyframes slide-in-one-tap {
     from {
-        transform: translateY(75px);
+        transform: translateY(15px);
     }
 
     to {
