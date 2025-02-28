@@ -513,7 +513,7 @@ footer button {
     background: var(--primary-low);
     border-radius: 0rem .2rem .2rem 0rem;
     padding: 1.1rem 1rem;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 footer button:hover {
