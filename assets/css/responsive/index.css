@@ -5,7 +5,7 @@
 
 
     header {
-        padding: 0rem 1rem
+        padding: .8rem 1rem
     }
 
     section {
@@ -83,10 +83,7 @@
 
     /* footer */
 
-    footer .footer-logo img {
-        width: 8rem;
-        height: 5rem;
-    }
+
 
     /* footer */
 
@@ -131,7 +128,7 @@
 
 @media screen and (max-width:326px) {
     header {
-        padding: 0rem .5rem
+        padding: .8rem .5rem
     }
 
     .link-active span {

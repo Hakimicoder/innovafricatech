@@ -58,7 +58,7 @@ body {
 }
 
 header {
-    padding: 0rem 5rem;
+    padding: .8rem 5rem;
 }
 
 section {
@@ -179,6 +179,10 @@ i {
     font-weight: 900;
 }
 
+.banner .title {
+    word-wrap: break-word;
+}
+
 .banner p {
     color: var(--secondary-white);
 }
@@ -240,6 +244,11 @@ i {
     margin-top: 3.5rem;
 }
 
+
+.pricing-bloc .title {
+    color: var(--secondary-black);
+    font-size: 2rem;
+}
 .cart p,
 .pricing-bloc li {
     color: var(--secondary-black);
@@ -252,7 +261,7 @@ i {
     width: 50%;
     margin: auto;
     padding: .7rem 1rem;
-    background: #ede7e7;
+    box-shadow: 1px 1px 5px 1px #ddd4d4;
     border-radius: .3rem;
     text-align: center;
     color: inherit;
@@ -261,6 +270,7 @@ i {
 .cart:hover .text a,
 .pricing-bloc:hover a {
     background: var(--linear-bg);
+    box-shadow: none;
     transition: all .3s ease-in-out;
     color: var(--white);
 }
@@ -274,8 +284,13 @@ i {
     color: var(--secondary-white);
 }
 
+.pricing-bloc .sec-title {
+    color: var(--black);
+    font-size: 2rem !important;
+}
+
 .cart:hover .number,
-.pricing-bloc:hover h1 {
+.pricing-bloc:hover h2 {
     color: var(--primary);
 }
 
